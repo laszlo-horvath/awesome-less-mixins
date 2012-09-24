@@ -1,4 +1,6 @@
-/*#region FONT */
+/*#region COLORS */
+/*#region COLORS */
+/*#endregion COLORS */
 /*#region FONT */
 /*#region FONT-FACE*/
 @font-face {
@@ -30,27 +32,23 @@
   font-style: normal;
 }
 @font-face {
+  font-family: 'SegoeWPLight';
+  src: url('fonts/segoewp-semilight.eot');
+  src: url('fonts/segoewp-semilight.eot?#iefix') format('embedded-opentype'), url('fonts/segoewp-semilight.ttf') format('font/truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'SegoeUILight';
-  src: url('fonts/segoeuil-webfont.eot');
-  src: url('fonts/segoeuil-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/segoeuil-webfont.ttf') format('font/truetype'), /*url('fonts/segoeuil-webfont.woff') format('woff'),*/
-   /*url('fonts/segoeuil-webfont.svgz#SegoeUILight') format('svg'),*/
-   url('fonts/segoeuil-webfont.svg#SegoeUILight') format('svg');
+  src: url('"../../../../fonts/segoeuil-webfont.eot');
+  src: url('"../../../../fonts/segoeuil-webfont.eot?#iefix') format('embedded-opentype'), url('"../../../../fonts/segoeuil-webfont.ttf') format('truetype'), url('"../../../../fonts/segoeuil-webfont.woff') format('woff'), url('"../../../../fonts/segoeuil-webfont.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SegoeWP';
-  src: url('fonts/segoewp.eot');
-  src: url('fonts/segoewp.eot?#iefix') format('embedded-opentype'), /*url('fonts/segoewp.woff') format('woff'),*/
-   url('fonts/segoewp.ttf') format('font/truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'SegoeWPLight';
-  src: url('fonts/segoewp-semilight.eot');
-  src: url('fonts/segoewp-semilight.eot?#iefix') format('embedded-opentype'), /*url('fonts/segoewp-semilight.woff') format('woff'),*/
-   url('fonts/segoewp-semilight.ttf') format('font/truetype');
+  src: url('"../../../../fonts/segoewp.eot');
+  src: url('"../../../../fonts/segoewp.eot?#iefix') format('embedded-opentype'), url('"../../../../fonts/segoewp.ttf') format('truetype'), url('"../../../../fonts/segoewp.woff') format('woff'), url('"../../../../fonts/segoewp.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -85,6 +83,39 @@
 .segoeuilight {
   font-family: 'SegoeUILight', 'Century Gothic', Arial !important;
 }
+.font16 {
+  font-size: 16px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font28 {
+  font-size: 28px;
+}
+.font28_ {
+  font-size: 28px !important;
+}
+.font30 {
+  font-size: 30px;
+}
+.font100 {
+  font-size: 100%;
+}
+.font95 {
+  font-size: 90%;
+}
+.font90 {
+  font-size: 90%;
+}
+.font80 {
+  font-size: 80%;
+}
+.font70 {
+  font-size: 70%;
+}
+.font60 {
+  font-size: 60%;
+}
 /*#endregion FONT */
 /*#region LAYOUT */
 .tdnone {
@@ -102,17 +133,32 @@
 .tdthrough {
   text-decoration: line-through;
 }
+.tdthrough_ {
+  text-decoration: line-through !important;
+}
 .taleft {
   text-align: left;
+}
+.taleft_ {
+  text-align: left !important;
 }
 .tacenter {
   text-align: center;
 }
+.tacenter_ {
+  text-align: center !important;
+}
 .taright {
   text-align: right;
 }
+.taright_ {
+  text-align: right !important;
+}
 .tajustify {
   text-align: justify;
+}
+.tajustify_ {
+  text-align: justify !important;
 }
 .fwbold {
   font-weight: bold;
@@ -132,8 +178,14 @@
 .fleft {
   float: left;
 }
+.fleft_ {
+  float: left !important;
+}
 .fright {
   float: right;
+}
+.fright_ {
+  float: right !important;
 }
 .fnone {
   float: none;
@@ -144,8 +196,14 @@
 .clear {
   clear: both;
 }
+.clear_ {
+  clear: both !important;
+}
 .cnone {
   clear: none;
+}
+.cnone_ {
+  clear: none !important;
 }
 .toupper {
   text-transform: uppercase;
@@ -159,8 +217,14 @@
 .capitalize {
   text-transform: capitalize;
 }
+.capitalize_ {
+  text-transform: capitalize !important;
+}
 .show {
   display: block;
+}
+.show_ {
+  display: block !important;
 }
 .hide {
   display: none;
@@ -191,6 +255,18 @@
 }
 .vamiddle {
   vertical-align: middle;
+}
+ul.listreset {
+  list-style-type: none;
+}
+ul.listreset li {
+  list-style-type: none;
+}
+.nobg {
+  background: none;
+}
+.nobg_ {
+  background: none !important;
 }
 .box {
   -webkit-box-sizing: border-box;
@@ -233,11 +309,20 @@
 .ohidden {
   overflow: hidden;
 }
+.ohidden_ {
+  overflow: hidden !important;
+}
 .ovisible {
   overflow: visible;
 }
 .ovisible_ {
   overflow: visible !important;
+}
+.oauto {
+  overflow: auto;
+}
+.oauto_ {
+  overflow: auto !important;
 }
 .reset-mp {
   margin: 0 !important;
@@ -312,6 +397,12 @@
 .margin30 {
   margin: 30px;
 }
+.marginr5 {
+  margin-right: 5px;
+}
+.marginr5_ {
+  margin-right: 5px !important;
+}
 .marginr10 {
   margin-right: 10px;
 }
@@ -326,6 +417,12 @@
 }
 .margin10_0 {
   margin: 10px 0;
+}
+.marginb0 {
+  margin-bottom: 0px;
+}
+.marginb0_ {
+  margin-bottom: 0px !important;
 }
 .marginb5 {
   margin-bottom: 5px;
@@ -344,6 +441,9 @@
 }
 .marginb20 {
   margin-bottom: 20px;
+}
+.marginb25 {
+  margin-bottom: 25px;
 }
 .margin20_0_10 {
   margin: 20px 0 10px;
@@ -372,6 +472,15 @@
 .marginl35_ {
   margin-left: 35px !important;
 }
+.maxwidth75 {
+  max-width: 75%;
+}
+.hover-pointer:hover {
+  cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}
 .code-snippet {
   min-height: 20px;
   margin: 10px 0;
@@ -394,19 +503,38 @@ hr.soften {
 .bg-white {
   background: white;
 }
+.split2 div,
+.split2 span {
+  float: left;
+  width: 49% !important;
+}
+.split2 div:first-child,
+.split2 span:first-child {
+  margin-right: 5px;
+}
+.split2 div:nth-child(2),
+.split2 span:nth-child(2) {
+  margin-right: 0px;
+}
+.top5 {
+  position: relative;
+  top: 5px;
+}
+.top10 {
+  position: relative;
+  top: 10px;
+}
 /*#endregion LAYOUT */
 /*#region METRO */
 #metro .tile {
   display: block;
-  width: 114px;
-  height: 114px;
+  width: 106px;
+  height: 107px;
   margin: 4px;
-  border: none;
+  border: none !important;
   float: left;
   clear: none;
   color: #fff;
-  -webkit-transform: translate3d(0px, 0px, 0px) rotatey(0deg);
-  -webkit-transition-duration: 300ms;
 }
 #metro .tile > span {
   display: block;
@@ -432,7 +560,6 @@ hr.soften {
   left: auto;
   margin-top: -25px;
   font-size: 37px;
-  font-size: 3.7rem;
   text-align: center;
 }
 #metro .tile > span span.text {
@@ -442,7 +569,6 @@ hr.soften {
   bottom: 7px;
   left: 7px;
   font-size: 13px;
-  font-size: 1.3rem;
   line-height: 13px;
 }
 #metro .tile > span span.number {
@@ -452,21 +578,113 @@ hr.soften {
   bottom: auto;
   left: auto;
   font-size: 14px;
-  font-size: 1.4rem;
+  line-height: 14px;
+}
+#metro .tile > span span.b-right {
+  position: absolute;
+  top: auto;
+  right: 7px;
+  bottom: 7px;
+  left: auto;
+  font-size: 14px;
   line-height: 14px;
 }
 #metro .tilewide {
   display: block;
-  width: 236px;
-  height: 114px;
+  width: 220px;
+  height: 107px;
   margin: 4px;
-  border: none;
+  border: none !important;
   float: left;
-  -webkit-transform: translate3d(0px, 0px, 0px) rotatey(0deg);
-  -webkit-transition-duration: 300ms;
 }
 #metro .tilewide span {
   color: #fff;
+}
+.btn-metro {
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid #fff;
+  padding: 2px 5px;
+  background: #fff;
+  color: #000;
+}
+.btn-metro:hover {
+  cursor: pointer;
+}
+.btn-metro:active {
+  opacity: 0.7;
+}
+.btn-metro.btn-small {
+  width: 75px;
+  height: 35px;
+  line-height: 27px;
+}
+.btn-metro.btn-medium {
+  width: 150px;
+  height: 35px;
+  line-height: 27px;
+}
+.btn-metro.btn-large {
+  width: 100%;
+  height: 35px;
+  line-height: 27px;
+}
+div.metro-checkbox {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 28px !important;
+  width: 28px !important;
+  background: #fff;
+  margin: 0 auto;
+}
+div.metro-checkbox input[type=checkbox] {
+  visibility: hidden;
+}
+div.metro-checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+div.metro-checkbox label {
+  position: absolute;
+  top: 4px;
+  right: auto;
+  bottom: auto;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  line-height: initial;
+  background: white;
+  cursor: pointer;
+}
+div.metro-checkbox label::after {
+  position: absolute;
+  top: 4px;
+  right: auto;
+  bottom: auto;
+  left: 4px;
+  width: 9px;
+  height: 5px;
+  line-height: initial;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  background: transparent;
+  content: '';
+  opacity: 0;
+  border: 3px solid black;
+  border-top: none;
+  border-right: none;
+}
+div.metro-checkbox label:hover::after {
+  opacity: 0.3;
+}
+span.metro-checkbox-label {
+  width: auto;
+  height: 28px;
+  line-height: 28px;
+  margin-left: 10px;
 }
 /*#endregion METRO */
 /*#region FUNCTIONS */
