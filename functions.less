@@ -1,0 +1,55 @@
+.vheight(@height: auto, @line-height: inherit) {
+    height: @height;
+    line-height: @line-height;
+}
+
+.size(@width: auto, @height: auto, @line-height: initial){
+    width: @width;
+    height: @height;
+    line-height: @line-height;
+}
+
+.maxsize(@maxwidth: auto, @maxheight: auto){
+    max-width: @maxwidth;
+    max-height: @maxheight;
+    overflow: hidden;
+}
+
+.opacity(@opacity: 1){
+    -webkit-opacity : @opacity;
+    -moz-opacity: @opacity;
+    opacity: @opacity;
+}
+
+.opacity_(@opacity: 1){
+    -webkit-opacity : @opacity !important;
+    -moz-opacity: @opacity !important;
+    opacity: @opacity !important;
+}
+
+.position(@position: static, @top: auto, @right: auto, @bottom: auto, @left: auto){
+    position: @position;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left; 
+}
+
+.tap {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.clearfix {
+	zoom : 1;
+
+	&:before, &:after {
+		content : "\0020"; 
+		display : block; 
+		height : 0; 
+		overflow : hidden; }
+
+	&:after {
+		clear: both; }
+}

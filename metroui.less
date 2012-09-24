@@ -1,0 +1,91 @@
+@import "mixins.less";
+
+#metro {
+	.tile {
+		display: block;
+		width: 106px; height: 107px;
+		margin: 4px;
+		border: none !important;
+		float: left;
+		clear: none;
+		color: #fff;
+		
+		> span { 
+			.show; .size(100%, 100%);
+			
+			&:hover { cursor: pointer; }
+			
+		    span {
+		        &.middle {
+			        .show; .size(100%, 50px, 50px); .position(absolute, 50%); margin-top: -25px; .font-size(37); .tacenter;
+		        }
+		        &.text {
+			        .position(absolute, auto, auto, 7px, 7px); .font-size(13); line-height: 13px;
+		        }
+		        &.number {
+			        .position(absolute, 7px, 7px); .font-size(14); line-height: 14px;
+		        }
+		        &.b-right {
+		            .position(absolute, auto, 7px, 7px); .font-size(14); line-height: 14px;
+		        }
+		        color: #fff;
+		    }
+		}
+	}
+	
+	.tilewide {
+		display: block;
+		width: 220px; height: 107px;
+		margin: 4px;
+		border: none !important;
+		float: left;
+		
+		span {
+		    color: #fff;
+		}
+	}
+}
+
+.btn-metro {
+    .iblock; .tacenter; .font-size(16px);
+    border: 2px solid #fff; padding: 2px 5px;
+    background: #fff; color: #000;
+    
+    &:hover         { cursor: pointer; }
+    &:active        { opacity: 0.7; }
+    
+    &.btn-small     { .size(75px, 35px, 27px); }
+    &.btn-medium    { .size(150px, 35px, 27px); }
+    &.btn-large     { .size(100%, 35px, 27px); }
+}
+
+div.metro-checkbox {
+    .relative; .iblock; .fleft;
+    height: 28px !important; width: 28px !important;
+	background: #fff; margin: 0 auto;
+
+    input[type=checkbox] {
+        visibility: hidden;
+        
+        &:checked + label:after { opacity: 1; }
+    }
+    
+    label {
+	    .position(absolute, 4px, auto, auto, 4px); .size(20px, 20px);
+	    background: white; cursor: pointer;
+	    
+	    &::after {
+	        .position(absolute, 4px, auto, auto, 4px); .size(9px, 5px); .rotate(-45deg);
+	        background: transparent;
+	        content: '';
+	        opacity: 0;
+	        
+	        border: 3px solid black;
+	        border-top: none;
+	        border-right: none;
+        }
+        
+        &:hover::after { opacity: 0.3; }
+    }
+}
+span.metro-checkbox-label { .size(auto, 28px, 28px); margin-left: 10px; }
