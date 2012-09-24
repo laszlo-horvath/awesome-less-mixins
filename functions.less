@@ -3,10 +3,20 @@
     line-height: @line-height;
 }
 
+.trueheight(@height: 20px){
+	height: @height;
+	line-height: @height;
+}
+
 .size(@width: auto, @height: auto, @line-height: initial){
     width: @width;
     height: @height;
     line-height: @line-height;
+}
+
+.cube(@size: auto){
+    width: @size;
+    height: @size;
 }
 
 .maxsize(@maxwidth: auto, @maxheight: auto){
@@ -35,21 +45,19 @@
     left: @left; 
 }
 
-.tap {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
-    tap-highlight-color: rgba(0, 0, 0, 0);
+.indent(@indent: -9999em){
+	text-indent: @indent;
 }
 
-.clearfix {
-	zoom : 1;
+.box-sizing(@sizing: border-box){
+	-webkit-box-sizing: @sizing;
+	   -moz-box-sizing: @sizing;
+	        box-sizing: @sizing;
+}
 
-	&:before, &:after {
-		content : "\0020"; 
-		display : block; 
-		height : 0; 
-		overflow : hidden; }
-
-	&:after {
-		clear: both; }
+.bgsize(@size: 100% 100%){
+	-webkit-background-size: @size; 
+	   -moz-background-size: @size;
+	     -o-background-size: @size;
+	        background-size: @size;
 }

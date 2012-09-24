@@ -264,29 +264,6 @@ ul.listreset li {
 .bg-white {
   background: white;
 }
-.box {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.nobox {
-  -webkit-box-sizing: initial;
-  -moz-box-sizing: initial;
-  box-sizing: initial;
-}
-.dbox {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-}
-.dbox-center {
-  -webkit-box-pack: center;
-  -webkit-box-align: center;
-  -moz-box-pack: center;
-  -moz-box-align: center;
-  box-pack: center;
-  box-align: center;
-}
 .relative {
   position: relative;
 }
@@ -493,6 +470,7 @@ ul.listreset li {
   border: 1px solid #DDD;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
+  -o-border-radius: 0px;
   border-radius: 0px;
 }
 hr.soften {
@@ -517,6 +495,29 @@ hr.soften {
 .split2 span:nth-child(2) {
   margin-right: 0px;
 }
+.box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.nobox {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+}
+.dbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+.dbox-center {
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  box-pack: center;
+  box-align: center;
+}
 .tap {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -534,6 +535,12 @@ hr.soften {
 }
 .clearfix:after {
   clear: both;
+}
+.bgclip {
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  -o-background-clip: padding;
+  background-clip: padding-box;
 }
 /*#region BORDERRADIUS */
 /*#endregion BORDERRADIUS */
