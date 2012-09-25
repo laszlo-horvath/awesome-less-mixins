@@ -2,6 +2,7 @@
 /* IMPORT */
 /*#region COLORS */
 /* GREYSCALE */
+/* ACCENT COLORS */
 /*#endregion COLORS */
 /*#region FONT-FACE*/
 @font-face {
@@ -524,14 +525,13 @@ hr.soften {
   tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .clearfix {
-  zoom: 1;
+  *zoom: 1;
 }
 .clearfix:before,
 .clearfix:after {
-  content: "\0020";
-  display: block;
-  height: 0;
-  overflow: hidden;
+  display: table;
+  content: "";
+  line-height: 0;
 }
 .clearfix:after {
   clear: both;
@@ -542,6 +542,57 @@ hr.soften {
   -o-background-clip: padding;
   background-clip: padding-box;
 }
+/* TODO: make it function with a color as param */
+#color-scheme {
+  /* Complementary Color Scheme */
+
+  /* Subtle Color Scheme */
+
+}
+#color-scheme #compl .one {
+  color: #663333;
+}
+#color-scheme #compl .two {
+  color: #336666;
+}
+#color-scheme #compl .three {
+  color: #2b5555;
+}
+#color-scheme #compl .four {
+  color: #994d4d;
+}
+#color-scheme #compl .five {
+  color: #bb7777;
+}
+#color-scheme #subtle .one {
+  color: #663333;
+}
+#color-scheme #subtle .two {
+  color: #884a44;
+}
+#color-scheme #subtle .three {
+  color: #aa6355;
+}
+#color-scheme #subtle .four {
+  color: #442225;
+}
+#color-scheme #subtle .five {
+  color: #221114;
+}
+/*#region SIZING */
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*#endregion SIZING */
+/*#region VISIBILITY / POSITIONING */
+/*#endregion VISIBILITY / POSITIONING */
+/*#region TEXT */
+/*#endregion TEXT */
 /*#region BORDERRADIUS */
 /*#endregion BORDERRADIUS */
 /*#region BOXSHADOW */
@@ -552,5 +603,3 @@ hr.soften {
 /*#endregion GRADIENTS */
 /*#region TRANSFORMS */
 /*#endregion TRANSFORMS */
-/*#region COLUMNS */
-/*#endregion COLUMNS */

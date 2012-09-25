@@ -205,16 +205,17 @@ hr.soften {
 }
 
 .clearfix {
-	zoom : 1;
+    *zoom: 1;
 
-	&:before, &:after {
-		content : "\0020"; 
-		display : block; 
-		height : 0; 
-		overflow : hidden; 
-	}
-
-	&:after { clear: both; }
+    &:before, &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    
+    &:after {
+        clear: both;
+    }
 }
 
 .bgclip {
