@@ -9,6 +9,7 @@ László Horváth: [@RynoRn](http://twitter.com/RynoRn/ "@RynoRn")
 
 ##Future plans
 
+* Separate mixins into namespaces by types
 * Some kind of test method
 * Example for every mixin
 
