@@ -7,7 +7,10 @@ A big collection of LESS CSS mixins.
 
 László Horváth: [@RynoRn](http://twitter.com/RynoRn/ "@RynoRn")
 
+##Future plans
 
+* Some kind of test method
+* Example for every mixin
 
 ##License
 
