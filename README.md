@@ -11,7 +11,8 @@ László Horváth: [@RynoRn](http://twitter.com/RynoRn/ "@RynoRn")
 
 * Separate mixins into namespaces by types
 * Some kind of test method
-* Example for every mixin
+* Documentation
+* How to use and examples for every mixin
 
 ##License
 
