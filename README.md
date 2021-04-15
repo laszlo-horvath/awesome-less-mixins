@@ -14,20 +14,14 @@ File info:
 * mediaqueries.less: A set of mediaquery definitions.
 * variables.less: A set of predefined variables (mostly colors).
 
-##Author
-
-László Horváth: 
-* Website: [rynorn.com](http://rynorn.com "rynorn.com")
-* Twitter: [@RynoRn](http://twitter.com/RynoRn/ "@RynoRn")
-
-##Future plans
+# Future plans
 
 * Separate mixins into namespaces by types
 * Some kind of test method
 * Detailed documentation
-* 'How to use' examples for every mixin
+* 'How to use' examples
 
-##License
+# License
 
 * normalize.css v2.0.1 | MIT License | git.io/normalize
 * Others are free to use. Enjoy!
